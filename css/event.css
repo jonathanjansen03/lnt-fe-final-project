@@ -1,0 +1,277 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+.navbar-box {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+#logo {
+  height: 4.5rem;
+  font-size: 2.5rem;
+  font-family: "Poppins", cursive;
+  color: white;
+}
+
+#logo:hover {
+  color: #fdd017;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+#navitem {
+  color: white;
+  letter-spacing: 0.05rem;
+}
+
+#navitem:hover {
+  color: blue;
+}
+
+.events {
+  z-index: 2;
+  padding: 8rem 0 4rem 0;
+}
+
+.eventheading {
+  font-weight: bold;
+  padding-bottom: 1rem;
+  color: #fdd017;
+  text-align: center;
+}
+
+#event1,
+#event2 {
+  padding: 1rem;
+}
+
+#event1head,
+#event2head {
+  color: blue;
+  font-family: "Poppins", cursive;
+  font-size: 2.1rem;
+  padding: 1rem 0 0;
+  animation: event1head 2s ease-out infinite;
+}
+
+#event1p,
+#event2p {
+  letter-spacing: 0.02rem;
+}
+
+#event1pic,
+#event2pic {
+  height: 90%;
+  width: auto;
+}
+
+#carouselhead {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#carousel {
+  background-color: transparent;
+  padding: 2rem 5rem 3rem;
+}
+
+#carimage {
+  height: 80%;
+  width: auto;
+}
+
+#buttonslide {
+  color: white;
+  z-index: 1;
+}
+
+#carouseltext {
+  align-items: center;
+  background-color: black;
+  opacity: 80%;
+  background-image: linear-gradient(black, rgb(37, 37, 37));
+}
+
+#carouseltext h5,
+#carouseltext p {
+  font-size: 1.2rem;
+  margin: 0.2rem;
+}
+
+#form {
+  padding: 2rem 5rem;
+}
+
+#formhead {
+  font-family: "Poppins", cursive;
+  color: #fdd017;
+  font-size: 2rem;
+}
+
+#inputform,
+#submit,
+#alert-success {
+  width: 80%;
+}
+
+#label {
+  font-size: 1.3rem;
+}
+
+#nameInput.error,
+#emailInput.error,
+#phoneInput.error {
+  visibility: visible;
+  border-color: rgb(161, 12, 12);
+  border-width: 0.3rem;
+  background-color: #f5d9d6;
+}
+
+#option,
+#inputform {
+  color: black;
+}
+
+.alert1,
+.alert2,
+.alert3 {
+  color: #e74c3c;
+  margin: 0.8rem 0;
+}
+
+#submit {
+  margin: 0.8rem 0;
+  color: black;
+  width: 9rem;
+}
+
+#alert-success {
+  padding: 10px;
+  width: 80%;
+  color: white;
+}
+
+footer {
+  background-color: rgb(29, 27, 27);
+  padding: 2rem;
+}
+
+#copyright {
+  font-family: "Poppins", cursive;
+  background-color: rgb(29, 27, 27);
+  text-align: center;
+  color: #fdd017;
+  letter-spacing: 0.05rem;
+}
+
+@media only screen and (max-width: 767px) {
+  #logo {
+    font-size: 2rem;
+    height: 4rem;
+  }
+
+  .events {
+    padding: 7rem 0 4rem 0;
+  }
+
+  .eventheading {
+    padding-bottom: 0;
+  }
+
+  #event1,
+  #event2 {
+    padding: 1rem 1rem 0;
+    margin: 1rem 0;
+  }
+
+  #event2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #event1head,
+  #event2head {
+    font-size: 1.5rem;
+  }
+
+  #event1p,
+  #event2p {
+    font-size: smaller;
+  }
+
+  #carousel {
+    background-color: transparent;
+    padding: 2rem 2rem 3rem;
+  }
+
+  #carimage {
+    height: 60%;
+    width: auto;
+  }
+
+  #carouseltext h5,
+  #carouseltext p {
+    font-size: 0.7rem;
+    margin: 0.2rem;
+    padding: 0 1rem;
+  }
+
+  #form {
+    padding: 1rem 2rem;
+  }
+
+  #formhead {
+    font-size: 1.8rem;
+  }
+
+  #inputform,
+  #submit,
+  #alert-success {
+    width: 90%;
+  }
+
+  #label {
+    font-size: 1rem;
+  }
+
+  #submit {
+    width: 5rem;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
+
+  #copyright {
+    font-size: smaller;
+  }
+}
+
+@keyframes event1head {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

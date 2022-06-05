@@ -1,0 +1,150 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+.navbar-box {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+#logo {
+  height: 4.5rem;
+  font-size: 2.5rem;
+  font-family: "Poppins", cursive;
+  color: white;
+}
+
+#logo:hover {
+  color: #fdd017;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+#navitem {
+  color: white;
+  letter-spacing: 0.05rem;
+}
+
+#navitem:hover {
+  color: blue;
+}
+
+#content {
+  z-index: 1;
+  padding: 10rem 0rem 4rem 0rem;
+}
+
+#contactus {
+  font-family: "Poppins", cursive;
+  color: blue;
+  font-size: 3rem;
+  padding-top: 2rem;
+  background: transparent;
+  animation: contactus 2s ease-out infinite;
+}
+
+#phone,
+#email {
+  height: 2rem;
+  padding-right: 0.5rem;
+}
+
+.container2,
+.container3 {
+  display: flex;
+  padding-bottom: 0.5rem;
+}
+
+#image {
+  margin: auto;
+  animation: image 10s infinite linear;
+  background: transparent;
+  height: fit-content;
+  opacity: 60%;
+}
+
+footer {
+  background-color: rgb(29, 27, 27);
+  padding: 2rem;
+}
+
+#copyright {
+  font-family: "Poppins", cursive;
+  background-color: rgb(29, 27, 27);
+  text-align: center;
+  color: #fdd017;
+  letter-spacing: 0.05rem;
+}
+
+@media only screen and (max-width: 991px) {
+  #PF {
+    font-size: 2rem;
+    height: 4rem;
+  }
+
+  .content {
+    padding: 6rem 0rem 4rem 1rem;
+  }
+
+  #contactus {
+    font-size: 2.7rem;
+  }
+
+  #phone,
+  #email {
+    font-size: 1rem;
+    height: 1.5rem;
+  }
+
+  #image {
+    height: 95%;
+    width: auto;
+    padding-top: 2rem;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
+
+  #copyright {
+    font-size: smaller;
+  }
+}
+
+@keyframes contactus {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes image {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
